@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="CSS/Create.css"/>
+        <title>Formulario Creacion Evento</title>
+    </head>
+    <body>
+        <section class="form-register">
+            <form th:object ="${concierto}"
+                  th:action="@{/save}"
+                  method="POST"
+                  >
+                <div class="form-group-row">
+                    <label class="form-control-sm col-md-2" for="costo">Costo</label>
+                    <input type="text" th:field="*{costo}" class="form-control form-control-sm col-md-6"/>
+                </div> 
+                <div class="form-group-row">
+                    <label class="form-control-sm col-md-2" for="fecha">Fecha</label>
+                    <input type="text" th:field="*{fecha}" class="form-control form-control-sm col-md-6"/>
+                </div> 
+                <div class="form-group-row">
+                    <label class="form-control-sm col-md-2" for="cant">Cantidad</label>
+                    <input type="text" th:field="*{cant}" class="form-control form-control-sm col-md-6"/>
+                </div> 
+                <div class="form-group-row">
+                    <label class="form-control-sm col-md-2" for="lugar">Lugar</label>
+                    <input type="text" th:field="*{lugar}" class="form-control form-control-sm col-md-6"/>
+                </div>
+                <div class="form-group-row">
+                    <label class="form-control-sm col-md-2" for="email">Email</label>
+                    <input type="text" th:field="*{email}" class="form-control form-control-sm col-md-6"/>
+                </div>
+
+                <button type="submit" class="btn btn-primary" value="Guardar">Submit</button>
+                
+            </form>
+        </section>
+</html>

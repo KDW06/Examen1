@@ -1,0 +1,77 @@
+.navbar{
+    Height: 15 vh;
+    Width: 100%;
+    Margin: auto;
+    Display: flex;
+    Align-items: center;
+}
+
+.container{
+    Height: 100 vh;
+    Width: 100%;
+    background: linear-gradient(110deg, #006b77 50%,#006b4b 50%);
+    Background-position: center;
+    Background-size: cover;
+    Padding-left: 5%;
+    Padding-right: 5%;
+    Box-sizing:border-box;
+    Position:relative;
+}
+
+div img{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+
+Nav ul li {
+    Display:inline-block;
+    List-style:none;
+    Margin:0px 20px;
+}
+
+Nav{
+    Flex: 1;
+    Padding-left:60px;
+}
+
+.content{
+    Margin-top:10%;
+    Margin-left:10%;
+}
+
+Nav ul li a{
+    Text-decoration: none;
+    Color:#B755FA;
+}
+
+
+.content p{
+    Font-size: 20px;
+    Color: #7521AE;
+}
+.content h1{
+    Font-size:60px;
+    Font-weight:100;
+    Margin-top:24px;
+    Margin-bottom:15px;
+    Color:5B1A88;
+}
+
+.arrow-icons{
+    Margin-top: 40px;
+    Display:flex;
+}
+
+.arrow-icons img{
+    Width:40px;
+    Margin-right:25px;
+}
+
+.bad{
+    Height: 50%;
+    Position:absolute;
+    Bottom:50px;
+    Right:160px;
+}
+

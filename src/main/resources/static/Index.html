@@ -1,0 +1,41 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>ITicket</title>
+        <link rel="stylesheet" href="CSS/Index.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="navbar">
+                <img src="pngegg.png" alt=""/>
+                <h1>ITicket</h1>
+            </div>
+            <h1>Eventos</h1>
+            <table>
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Artista </th>
+                        <th scope="col">Lugar </th>
+                        <th scope="col">Costo </th>
+                        <th scope="col">Fecha </th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <th:block th:each="user : ${Concierto}">
+                    <tr>
+                        <td th:text="${user.getCosto}"></td>
+                        <td th:text="${user.getFecha}"></td>
+                        <td th:text="${user.getCant}"></td>
+                        <td th:text="${user.getLugar}"></td>
+                        <td th:text="${user.getArtista}"></td>
+                        <td>
+                            <a th:href="@{/delete/{id}(id=${user.getId})}">Delete</a>
+                        </td>
+                    </tr>
+                </th:block>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
